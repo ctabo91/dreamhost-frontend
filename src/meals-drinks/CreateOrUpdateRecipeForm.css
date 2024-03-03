@@ -1,0 +1,41 @@
+.form-container, .form-card {
+    background-color: transparent;
+    border: none;
+}
+
+form {
+    color: white;
+}
+
+.form-title {
+    font-family: "Gruppo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.form-redirect {
+    /* font-family: "Cinzel Decorative", serif;
+    font-weight: 700;
+    font-style: normal; */
+    font-family: "Agdasima", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.submit-button {
+    background-color: rgb(32, 26, 26);
+    border: none;
+    color: rgb(110, 66, 66);
+}
+
+.submit-button:hover {
+    background-color: rgb(32, 26, 26);
+    border: none;
+    color: rgb(110, 66, 66);
+}
+
+.trash-button {
+    background-color: transparent;
+}
+

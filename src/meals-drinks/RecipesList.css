@@ -1,0 +1,17 @@
+.filter-button {
+    background-color: rgb(32, 26, 26);
+    border: none;
+    color: rgb(110, 66, 66);
+}
+
+.filter-button:hover {
+    background-color: rgb(126, 37, 37);
+    color: rgb(32, 26, 26);
+}
+
+.RecipesList-title {
+    font-family: "Gruppo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}

@@ -1,0 +1,89 @@
+.RecipeDetails-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.RecipeDetails-content {
+    position: relative;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+}
+
+.RecipeDetails-title {
+    /* font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal; */
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 7rem;
+}
+
+.RecipeDetails-category {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    /* font-family: "Playball", cursive;
+    font-weight: 400;
+    font-style: normal; */
+}
+
+.heading-title {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.RecipeDetails-instructions {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    max-height: 400px;
+    overflow-y: hidden;
+    text-align: justify;
+}
+
+.RecipeDetails-instructions:hover {
+    overflow-y: auto;
+}
+
+.RecipeDetails-instructions::-webkit-scrollbar {
+    width: 2px;
+}
+
+.RecipeDetails-instructions::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 10px;
+}
+
+.btn-favorite {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2.5rem;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+.btn-favorite.favorited {
+    color: #dc3545;
+}
+
+.btn-edit {
+    width: 130px;
+    font-size: larger;
+}
+
+.split-line {
+    border-right: 1px solid #ccc;
+    margin-left: 10px;
+}

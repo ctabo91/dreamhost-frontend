@@ -1,0 +1,70 @@
+.RecipeCard {
+    /* background-color: rgb(87, 58, 63); */
+    /* background: linear-gradient(45deg, rgb(126, 37, 37), rgb(110, 66, 66), rgb(126, 37, 37), rgb(110, 66, 66)); */
+    background: linear-gradient(45deg, rgb(61, 17, 17), rgb(110, 66, 66), rgb(61, 17, 17), rgb(110, 66, 66));
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    width: 100%;
+}
+
+.RecipeCard:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.RecipeCard img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.RecipeCard-title {
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+.RecipeCard-subheading, .RecipeCard-ingredients {
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.RecipeCard-list {
+    max-height: 100px;
+    overflow-y: hidden;
+}
+
+.RecipeCard-list:hover {
+    overflow-y: auto;
+}
+
+.RecipeCard-list::-webkit-scrollbar {
+    width: 3px;
+}
+
+.RecipeCard-list::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 10px;
+}
+
+.top-line {
+    background-color: white;
+    width: 15px;
+}
+
+hr {
+    background-color: rgb(102, 50, 50);
+}
+
+@media (max-width: 768px) {
+    .card-body {
+        padding: 10px;
+    }
+
+    .RecipeCard-list {
+        max-height: none;
+        overflow-y: auto;
+    }
+}

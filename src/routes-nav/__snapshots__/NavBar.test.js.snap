@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <nav
+      class="NavBar navbar navbar-expand-lg d-flex justify-content-between"
+    >
+      <a
+        class="navbar-brand"
+        href="/"
+      >
+        DreamHost
+      </a>
+      <ul
+        class="navbar-nav ml-auto"
+      >
+        <li
+          class="nav-item mr-4"
+        >
+          <a
+            class="nav-link"
+            href="/recipes/meals"
+          >
+            Meals
+          </a>
+        </li>
+        <li
+          class="nav-item mr-4"
+        >
+          <a
+            class="nav-link"
+            href="/recipes/drinks"
+          >
+            Drinks
+          </a>
+        </li>
+        <li
+          class="nav-item mr-4"
+        >
+          <a
+            class="nav-link"
+            href="/profile"
+          >
+            Profile
+          </a>
+        </li>
+        <li
+          class="nav-item mr-4"
+        >
+          <a
+            class="nav-link"
+            href="/recipes/create/meals"
+          >
+            Create Meal
+          </a>
+        </li>
+        <li
+          class="nav-item mr-4"
+        >
+          <a
+            class="nav-link"
+            href="/recipes/create/drinks"
+          >
+            Create Drink
+          </a>
+        </li>
+        <li
+          class="nav-item mr-4"
+        >
+          <a
+            class="nav-link"
+            href="/recipes/meals/personal"
+          >
+            Personal Meals
+          </a>
+        </li>
+        <li
+          class="nav-item mr-4"
+        >
+          <a
+            class="nav-link"
+            href="/recipes/drinks/personal"
+          >
+            Personal Drinks
+          </a>
+        </li>
+        <li
+          class="nav-item"
+        >
+          <a
+            class="nav-link"
+            href="/"
+          >
+            Logout
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`matches snapshot when logged out 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <nav
+      class="NavBar navbar navbar-expand-lg d-flex justify-content-between"
+    >
+      <a
+        class="navbar-brand"
+        href="/"
+      >
+        DreamHost
+      </a>
+      <ul
+        class="navbar-nav ml-auto"
+      >
+        <li
+          class="nav-item mr-4"
+        >
+          <a
+            class="nav-link"
+            href="/login"
+          >
+            Login
+          </a>
+        </li>
+        <li
+          class="nav-item mr-4"
+        >
+          <a
+            class="nav-link"
+            href="/signup"
+          >
+            Sign Up
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,34 @@
+.CategoryCard {
+    background-color: rgb(32, 26, 26);
+    color: rgb(110, 66, 66);
+    text-decoration: none;
+    /* font-family: "Aboreto", system-ui;
+    font-weight: 400;
+    font-style: normal; */
+    /* font-family: "Agdasima", sans-serif;
+    font-weight: 400;
+    font-style: normal; */
+    /* font-family: "Cinzel Decorative", serif;
+    font-weight: 900;
+    font-style: normal; */
+    /* font-family: "Abhaya Libre", serif;
+    font-weight: 700;
+    font-style: normal; */
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.CategoryCard:hover {
+    color: rgb(32, 26, 26);
+    background-color: rgb(110, 66, 66);
+    text-decoration: none;
+}
+
+.CategoryList-title {
+    font-family: "Gruppo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+

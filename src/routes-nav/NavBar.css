@@ -1,0 +1,46 @@
+.NavBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(32, 26, 26);
+    padding: 10px;
+    z-index: 3;
+}
+
+.navbar-brand {
+    color: rgb(126, 37, 37);
+    font-size: 2rem;
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar-brand:hover {
+    color: rgb(126, 37, 37);
+}
+
+.nav-link {
+    color: rgb(110, 66, 66);
+    font-size: 1.15rem;
+    box-sizing: border-box;
+}
+
+.nav-link:hover {
+    color: rgb(110, 66, 66);
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    background-color: rgb(32, 26, 26);
+    border: none;
+}
+
+.dropdown-item-container {
+    width: auto;
+    position: relative;
+}
+
+.dropdown-item-container .nav-link {
+    width: 100%;
+}
