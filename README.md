@@ -1,70 +1,152 @@
-# Getting Started with Create React App
+#*DreamHost*
+## Site Link
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## API Links
 
-## Available Scripts
+### Meals
+[https://www.themealdb.com/api.php](https://www.themealdb.com/api.php)
+### Drinks
+[https://www.thecocktaildb.com/api.php](https://www.thecocktaildb.com/api.php)
 
-In the project directory, you can run:
+## Application
+The purpose of this app is to allow users access to a database full of different recipes for both *meals* and *drinks*.  
+In addition to this, they can create and store their own personal recipes.   
+I've chosen to gather my information from two different APIs:  
 
-### `npm start`
+- **TheMealDB**  
+- **TheCocktailDB**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Application built using a JavaScript stack:**  
+- JavaScript  
+- React.js  
+- Node.js  
+- Express.js  
 
-### `npm test`
+**Styling done with:**  
+- Bootstrap  
+- CSS  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Tests
+Test files are located in the same folder as the JS file that they are testing.  
+You can run all tests with `npm test` or individually with `npm test test_file_name`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## User Flow
+When first opening the application, the user is welcomed with the message: **"Welcome To DreamHost"**.  
+If the user already has a profile, they can log in through the **Login** link in the **NavBar**.  
+If not, they can sign up using the **Sign Up** link.  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+After creating a user profile or logging in, users are welcomed with a personalized welcome message on the **Home** page.  
 
-### `npm run eject`
+From here, the user has the following options available to them in the **NavBar**:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- ***Recipes Dropdown:***
+	- **Meals***(list of all meals)*
+	- **Drinks***(list of all drinks)*
+	- **Meal Categories***(list of meal categories)*
+	- **Drink Categories***(list of drink categories)*
+- ***Personal Dropdown:***
+	- **Create Meal***(form to create a personal meal)*
+	- **Create Drink***(form to create a personal drink)*
+	- **Personal Meals***(list of personal meals already created)*
+	- **Personal Drinks***(list of personal drinks already created)*
+- ***Profile:***
+	- form that shows user profile information, with the ability to update it
+- ***Logout:***
+	- logs out the user
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Recipes Dropdown
+#### `Meals`/`Drinks`
+When the user clicks on **Meals** or **Drinks**, they are taken to a list of all the respective recipes available in the database.  
+On this page there is a **Search** form that allows the user to search for recipes by name.  
+There are also two buttons directly below the search form:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- A `Filter by Category` button, which takes the user to the list of respective page's categories
+- A `Show Favorites` button, which takes the user to a list of recipes, of that specific type, that they have favorited
+	- when clicked, the button changes to a `Back to All Meals` or `Back to All Drinks` button*(depending on whether the user is on the **Meals** or **Drinks** page)*
 
-## Learn More
+#### `Meal Categories`/`Drink Categories`
+When the user clicks on **Meal Categories** or **Drink Categories**, they are taken to the list of the respective categories available.  
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Each **Category** is displayed on a link that shows the category *name* and a *count* for how many recipes are in that category.  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Clicking on a category will take the user to a list of all recipes that are in that category.  
 
-### Code Splitting
+##### Recipes List:
+Each recipe that is listed on the page is shown as a link, which provides a picture and minimal information for the recipe:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- for **Meals**:
+	- name
+	- area*(where the meal is from)*
+	- ingredients list
+- for **Drinks**:
+	- name
+	- type*(Alcoholic or Non-Alcoholic)*
+	- ingredients list
 
-### Analyzing the Bundle Size
+When a recipe is clicked on, the user is taken to a full details page for that recipe.  
+Included on this page is:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- for **Meals**:
+	- Name
+	- Area
+	- Category
+	- Ingredients
+	- Instructions
+- for **Drinks**:
+	- Name
+	- Type
+	- Glass to serve in
+	- Category
+	- Ingredients
+	- Instructions
+- a heart icon, which, when clicked, adds/removes the recipe to/from the user's favorites list.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Personal Dropdown
+#### `Create Meal`/`Create Drink`
+When the user clicks on **Create Meal** or **Create Drink**, they are taken to a form to create a personal respective recipe.
+> ***It's important to note that the recipes created here will only be visible to the user that created them***
 
-### Advanced Configuration
+The input fields on this form are as follows:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- for **Meals**:
+	- Name
+	- Category
+	- Area
+	- Instructions
+	- Thumbnail*(optional field for an image of the recipe)*
+	- Ingredients list
+	- form to add an ingredient to the list
+- for **Drinks**:
+	- Name
+	- Category
+	- Type*(Radio field with options for either Alcoholic or Non-Alcoholic)*
+	- Glass*(optional field for recommended serving glass)*
+	- Instructions
+	- Thumbnail*(optional field for an image of the recipe)*
+	- Ingredients list
+	- form to add an ingredient to the list
 
-### Deployment
+Each ingredient in the ***Ingredients list*** has a trash icon next to it, to remove said ingredient from the list, if desired.  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+When this form is submitted, the user is redirected to the **Home** page, and the recipe is added to either ***Personal Meals*** or ***Personal Drinks***, depending on the form that was submitted.
 
-### `npm run build` fails to minify
+#### `Personal Meals`/`Personal Drinks`
+When the user clicks on **Personal Meals** or **Personal Drinks**, they are taken to a list of respective *personal* recipes.  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This list is very similar to the *all* **Meals** or **Drinks** list, with the exception of the **Search** form, the `Filter by Category` button, and the `Show Favorites` button.  
+
+***The recipes that are shown here are specific to the user that is logged in***  
+
+When a recipe is clicked on, a full details page for that recipe is shown.  
+This details page is identical to the details page for all other recipes, with the exception of the heart icon.  
+Instead of the heart icon, an `Edit Recipe` button is shown, which, when clicked, takes the user to a form to update that specific recipe.
+
+
+### Profile
+When the user clicks on **Profile**, they are taken to a form that displays the user's profile information.  
+Here, they have the option to update their profile, with the exception of the username.

@@ -28,8 +28,8 @@ function RecipeCard({ access, item, id, name, thumbnail, ingredients, area = und
                         <hr className="mt-0"/>
                         <h5 className="RecipeCard-ingredients text-center">Ingredients</h5>
                         <div className="RecipeCard-list text-center ">
-                            {ingredients.map(ingredient => (
-                                <div className="RecipeCard-ingredient">{ingredient}</div>
+                            {ingredients.map((ingredient, idx) => (
+                                <div key={idx} className="RecipeCard-ingredient">{ingredient}</div>
                             ))}
                         </div>
                     </div>

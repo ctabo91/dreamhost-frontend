@@ -95,8 +95,8 @@ function RecipeDetails() {
                         <div className="col-6">
                             <h4 className="heading-title">Instructions</h4>
                             <ol className="RecipeDetails-instructions">
-                                {organizedInstructions.map( instruction => (
-                                    <li className="RecipeDetails-list-item">{instruction}</li>
+                                {organizedInstructions.map( (instruction, idx) => (
+                                    <li key={idx} className="RecipeDetails-list-item">{instruction}</li>
                                 ))}
                             </ol>
                         </div>
@@ -104,8 +104,8 @@ function RecipeDetails() {
                         <div className="col-4">
                             <h4 className="heading-title">Ingredients</h4>
                             <ul className="RecipeDetails-ingredients">
-                                {recipe.ingredients.map(ingredient => (
-                                    <li className="RecipeDetails-list-item">{ingredient}</li>
+                                {recipe.ingredients.map((ingredient, idx) => (
+                                    <li key={idx} className="RecipeDetails-list-item">{ingredient}</li>
                                 ))}
                             </ul>
                         </div>
