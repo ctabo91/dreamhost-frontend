@@ -1,6 +1,4 @@
 .RecipeCard {
-    /* background-color: rgb(87, 58, 63); */
-    /* background: linear-gradient(45deg, rgb(126, 37, 37), rgb(110, 66, 66), rgb(126, 37, 37), rgb(110, 66, 66)); */
     background: linear-gradient(45deg, rgb(61, 17, 17), rgb(110, 66, 66), rgb(61, 17, 17), rgb(110, 66, 66));
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -45,12 +43,12 @@
 }
 
 .RecipeCard-list::-webkit-scrollbar-thumb {
-    background-color: gray;
+    background-color: rgb(128, 128, 128);
     border-radius: 10px;
 }
 
 .top-line {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     width: 15px;
 }
 

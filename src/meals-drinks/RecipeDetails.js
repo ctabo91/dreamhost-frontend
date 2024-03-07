@@ -119,7 +119,7 @@ function RecipeDetails() {
                           </button>
                         : <div className="container d-flex justify-content-end">
                             <Link to={`/recipes/update/${item}/${id}`}>
-                              <button className="btn btn-edit btn-danger text-dark active mt-4 mb-4">Edit Recipe</button>
+                              <button className="btn btn-edit btn-danger active mt-4 mb-4">Edit Recipe</button>
                             </Link>
                           </div>}
                 </div>

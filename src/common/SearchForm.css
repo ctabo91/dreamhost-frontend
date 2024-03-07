@@ -1,5 +1,5 @@
 .SearchForm button {
-    background-color: rgb(32, 26, 26);
+    background-color: rgb(0, 0, 0);
     border: none;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
@@ -7,7 +7,7 @@
 }
 
 .SearchForm button:hover {
-    background-color: rgb(32, 26, 26);
+    background-color: rgb(0, 0, 0);
     border: none;
     color: rgb(110, 66, 66);
 }
