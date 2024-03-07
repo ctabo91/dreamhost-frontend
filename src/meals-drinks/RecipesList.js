@@ -89,12 +89,12 @@ function RecipesList() {
             {category !== "personal" 
                 ? <div className="text-center">
                     <Link to={`/recipes/${item}/categories`}>
-                        <button className="filter-button btn btn-sm btn-secondary mr-2">
+                        <button className="filter-button filter-button-category btn btn-sm btn-secondary mr-2">
                             Filter by Category
                         </button>
                     </Link>
 
-                    <button className="filter-button btn btn-sm btn-secondary" onClick={toggleFavorites}>
+                    <button className="filter-button filter-button-favorite btn btn-sm btn-secondary" onClick={toggleFavorites}>
                         {favorites ? `Back to All ${capitalizedItem}` : "Show Favorites"}
                     </button>
                   </div>

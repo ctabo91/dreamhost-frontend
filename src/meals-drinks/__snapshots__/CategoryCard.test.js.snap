@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CategoryCard Component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="col-4 mb-4"
+  >
+    <a
+      class="CategoryCard card border-0"
+      href="/recipes/meals/Category%201"
+    >
+      <div
+        class="card-body text-center pl-0 pr-0"
+      >
+        <h5
+          class="card-title"
+        >
+          CATEGORY 1
+        </h5>
+        <p
+          class="card-text"
+        >
+          <small>
+            5 recipes
+          </small>
+        </p>
+      </div>
+    </a>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RecipeCard Component matches snapshot 1`] = `
+<DocumentFragment>
+  <a
+    class="RecipeCard card mb-3"
+    href="/recipes/details/global/meals/1"
+  >
+    <div
+      class="row no-gutters align-items-center"
+    >
+      <div
+        class="col-md-4"
+      >
+        <img
+          alt="Test Recipe"
+          class="card-img img-fluid"
+          src="test-thumbnail.jpg"
+        />
+      </div>
+      <div
+        class="col-md-8"
+      >
+        <div
+          class="card-body pt-0 pb-0"
+        >
+          <h3
+            class="RecipeCard-title card-title text-center pb-0"
+          >
+            TEST RECIPE
+          </h3>
+          <hr
+            class="top-line mt-0"
+          />
+          <h4
+            class="RecipeCard-subheading card-text text-center"
+          >
+            <i>
+              TEST AREA
+            </i>
+          </h4>
+          <hr
+            class="mt-0"
+          />
+          <h5
+            class="RecipeCard-ingredients text-center"
+          >
+            Ingredients
+          </h5>
+          <div
+            class="RecipeCard-list text-center "
+          >
+            <div
+              class="RecipeCard-ingredient"
+            >
+              Ingredient 1
+            </div>
+            <div
+              class="RecipeCard-ingredient"
+            >
+              Ingredient 2
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+</DocumentFragment>
+`;

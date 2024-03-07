@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RecipeDetails Component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="RecipeDetails-container"
+    style="background-image: url(test-thumbnail.jpg); background-size: cover; background-position: center; min-height: 100vh; width: 100%; padding-top: 60px; margin: 0px; position: relative;"
+  >
+    <div
+      class="RecipeDetails-overlay"
+    />
+    <div
+      class="RecipeDetails-content container"
+    >
+      <div
+        class="row"
+      >
+        <h2
+          class="RecipeDetails-title col text-center mt-4 "
+        >
+          TEST RECIPE
+        </h2>
+      </div>
+      <div
+        class="row"
+      >
+        <h3
+          class="RecipeDetails-category col text-center"
+        >
+          Test Area Test Category Dish
+        </h3>
+      </div>
+      <div>
+        <div
+          class="row mt-4 d-flex justify-content-around"
+        >
+          <div
+            class="col-6"
+          >
+            <h4
+              class="heading-title"
+            >
+              Instructions
+            </h4>
+            <ol
+              class="RecipeDetails-instructions"
+            >
+              <li
+                class="RecipeDetails-list-item"
+              >
+                Test instruction 
+              </li>
+              <li
+                class="RecipeDetails-list-item"
+              >
+                Test instruction 2.
+              </li>
+            </ol>
+          </div>
+          <div
+            class="col-1 split-line"
+          />
+          <div
+            class="col-4"
+          >
+            <h4
+              class="heading-title"
+            >
+              Ingredients
+            </h4>
+            <ul
+              class="RecipeDetails-ingredients"
+            >
+              <li
+                class="RecipeDetails-list-item"
+              >
+                Ingredient 1
+              </li>
+              <li
+                class="RecipeDetails-list-item"
+              >
+                Ingredient 2
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button
+          class="btn btn-favorite font-weight-bold mt-4 "
+        >
+          <svg
+            aria-hidden="true"
+            class="svg-inline--fa fa-heart "
+            data-icon="heart"
+            data-prefix="far"
+            focusable="false"
+            role="img"
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

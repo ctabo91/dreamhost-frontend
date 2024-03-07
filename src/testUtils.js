@@ -3,8 +3,8 @@ import UserContext from "./auth/UserContext";
 
 const demoUser = {
   username: "testuser",
-  first_name: "testfirst",
-  last_name: "testlast",
+  firstName: "testfirst",
+  lastName: "testlast",
   email: "test@test.net",
 };
 

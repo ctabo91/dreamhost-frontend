@@ -6,15 +6,15 @@ exports[`matches snapshot 1`] = `
     class="LoginForm"
   >
     <div
-      class="container col-md-6 offset-md-3 col-lg-4 offset-lg-4 mt-5 pt-5"
+      class="form-container container col-md-6 offset-md-3 col-lg-6 offset-lg-3 mt-5 pt-5"
     >
       <h2
-        class="display-2 mb-3 text-center"
+        class="form-title display-2 mb-3 text-center"
       >
-        Login
+        - Login -
       </h2>
       <div
-        class="card"
+        class="form-card card"
       >
         <div
           class="card-body"
@@ -46,7 +46,7 @@ exports[`matches snapshot 1`] = `
               />
             </div>
             <button
-              class="btn btn-primary float-right"
+              class="submit-button btn btn-primary float-right"
               type="submit"
             >
               Submit
@@ -54,6 +54,16 @@ exports[`matches snapshot 1`] = `
           </form>
         </div>
       </div>
+      <h2
+        class="form-redirect text-center mt-3"
+      >
+        Don't have an account? Sign up 
+        <a
+          href="/signup"
+        >
+          here
+        </a>
+      </h2>
     </div>
   </div>
 </DocumentFragment>

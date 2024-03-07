@@ -67,12 +67,12 @@ function Profile() {
                 <div className="card-body">
                     <form>
                         <div className="form-group">
-                            <label>Username</label>
-                            <p className="form-control-plaintext text-center">{formData.username}</p>
+                            <p id="username" className="form-control-plaintext text-center">Username: {formData.username}</p>
                         </div>
                         <div className="form-group">
-                            <label>First Name</label>
+                            <label htmlFor="firstName">First Name</label>
                             <input 
+                                id="firstName"
                                 name="firstName"
                                 className="form-control"
                                 value={formData.firstName}
@@ -80,8 +80,9 @@ function Profile() {
                             />
                         </div>
                         <div className="form-group">
-                            <label>Last Name</label>
+                            <label htmlFor="lastName">Last Name</label>
                             <input 
+                                id="lastName"
                                 name="lastName"
                                 className="form-control"
                                 value={formData.lastName}
@@ -89,8 +90,9 @@ function Profile() {
                             />
                         </div>
                         <div className="form-group">
-                            <label>Email</label>
+                            <label htmlFor="email">Email</label>
                             <input 
+                                id="email"
                                 name="email"
                                 className="form-control"
                                 value={formData.email}
@@ -98,8 +100,9 @@ function Profile() {
                             />
                         </div>
                         <div className="form-group">
-                            <label>Password</label>
-                            <input 
+                            <label htmlFor="password">Password</label>
+                            <input
+                                id="password" 
                                 type="password"
                                 name="password"
                                 className="form-control"

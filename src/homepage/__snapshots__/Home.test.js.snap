@@ -1,28 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`matches snapshot 1`] = `
+exports[`Home Component matches snapshot 1`] = `
 <DocumentFragment>
   <div
     class="Home mt-5 pt-5"
   >
     <h1
-      class="display-1 text-center pt-5"
+      class="Home-title display-1 text-center pt-5"
     >
-      Welcome undefined!
+      Welcome testfirst!
     </h1>
   </div>
 </DocumentFragment>
 `;
 
-exports[`matches snapshot when logged out 1`] = `
+exports[`Home Component matches snapshot when logged out 1`] = `
 <DocumentFragment>
   <div
     class="Home mt-5 pt-5"
   >
     <h1
-      class="display-1 text-center pt-5"
+      class="Home-title display-1 text-center pt-5"
     >
-      Welcome To DreamHost
+      <span>
+        Welcome To
+      </span>
+      <p
+        class="logo"
+      >
+        DreamHost
+      </p>
     </h1>
   </div>
 </DocumentFragment>

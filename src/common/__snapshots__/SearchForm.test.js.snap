@@ -5,9 +5,7 @@ exports[`matches snapshot 1`] = `
   <div
     class="SearchForm mb-3"
   >
-    <form
-      class="form-inline"
-    >
+    <form>
       <div
         class="input-group"
       >
@@ -18,7 +16,7 @@ exports[`matches snapshot 1`] = `
           value=""
         />
         <button
-          class="btn btn-lg btn-primary"
+          class="btn btn-lg"
           type="submit"
         >
           Submit

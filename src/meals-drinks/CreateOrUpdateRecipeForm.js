@@ -148,8 +148,9 @@ function CreateOrUpdateRecipeForm() {
                     <div className="card-body">
                         <form onSubmit={handleSubmit}>
                             <div className="form-group">
-                                <label className="CreateOrUpdateRecipeForm-label">Name</label>
-                                <input  
+                                <label htmlFor="name" className="CreateOrUpdateRecipeForm-label">Name</label>
+                                <input
+                                    id="name"  
                                     name="name" 
                                     className="form-control"
                                     value={formData.name} 
@@ -158,8 +159,9 @@ function CreateOrUpdateRecipeForm() {
                                 />
                             </div>
                             <div className="form-group mt-3">
-                                <label className="CreateOrUpdateRecipeForm-label">Category</label>
-                                <input  
+                                <label htmlFor="category" className="CreateOrUpdateRecipeForm-label">Category</label>
+                                <input
+                                    id="category"  
                                     name="category" 
                                     className="form-control"
                                     value={formData.category} 
@@ -172,8 +174,9 @@ function CreateOrUpdateRecipeForm() {
                             {item === "meals" 
                                     ? <>
                                         <div className="form-group mt-3">
-                                            <label className="CreateOrUpdateRecipeForm-label">Area</label>
-                                            <input  
+                                            <label htmlFor="area" className="CreateOrUpdateRecipeForm-label">Area</label>
+                                            <input
+                                                id="area"  
                                                 name="area"
                                                 className="form-control" 
                                                 value={formData.area} 
@@ -211,8 +214,9 @@ function CreateOrUpdateRecipeForm() {
                                             </div>
                                         </fieldset>
                                         <div className="form-group mt-3">
-                                            <label className="CreateOrUpdateRecipeForm-label">Glass</label>
-                                            <input  
+                                            <label htmlFor="glass" className="CreateOrUpdateRecipeForm-label">Glass</label>
+                                            <input
+                                                id="glass"  
                                                 name="glass" 
                                                 className="form-control"
                                                 value={formData.glass} 
@@ -222,8 +226,9 @@ function CreateOrUpdateRecipeForm() {
                                         </div>
                                       </>}
                             <div className="form-group mt-3">
-                                <label className="CreateOrUpdateRecipeForm-label">Instructions</label>
-                                <textarea 
+                                <label htmlFor="instructions" className="CreateOrUpdateRecipeForm-label">Instructions</label>
+                                <textarea
+                                    id="instructions" 
                                     name="instructions" 
                                     className="form-control"
                                     value={formData.instructions} 
@@ -232,8 +237,9 @@ function CreateOrUpdateRecipeForm() {
                                 </textarea>
                             </div>
                             <div className="form-group mt-3">
-                                <label className="CreateOrUpdateRecipeForm-label">Thumbnail</label>
-                                <input  
+                                <label htmlFor="thumbnail" className="CreateOrUpdateRecipeForm-label">Thumbnail</label>
+                                <input
+                                    id="thumbnail"  
                                     name="thumbnail" 
                                     className="form-control"
                                     value={formData.thumbnail} 

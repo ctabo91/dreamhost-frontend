@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CategoryList Component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="CategoryList col-md-8 offset-md-2 mt-5 pt-5"
+  >
+    <h4
+      class="CategoryList-title display-4 text-center mb-5"
+    >
+      - Select A Meal Category -
+    </h4>
+    <div
+      class="CategoryList-list row row-cols-1 row-cols-md-3"
+    >
+      <div
+        class="col-4 mb-4"
+      >
+        <a
+          class="CategoryCard card border-0"
+          href="/recipes/meals/Category%201"
+        >
+          <div
+            class="card-body text-center pl-0 pr-0"
+          >
+            <h5
+              class="card-title"
+            >
+              CATEGORY 1
+            </h5>
+            <p
+              class="card-text"
+            >
+              <small>
+                5 recipes
+              </small>
+            </p>
+          </div>
+        </a>
+      </div>
+      <div
+        class="col-4 mb-4"
+      >
+        <a
+          class="CategoryCard card border-0"
+          href="/recipes/meals/Category%202"
+        >
+          <div
+            class="card-body text-center pl-0 pr-0"
+          >
+            <h5
+              class="card-title"
+            >
+              CATEGORY 2
+            </h5>
+            <p
+              class="card-text"
+            >
+              <small>
+                6 recipes
+              </small>
+            </p>
+          </div>
+        </a>
+      </div>
+      <div
+        class="col-4 mb-4"
+      >
+        <a
+          class="CategoryCard card border-0"
+          href="/recipes/meals/Category%203"
+        >
+          <div
+            class="card-body text-center pl-0 pr-0"
+          >
+            <h5
+              class="card-title"
+            >
+              CATEGORY 3
+            </h5>
+            <p
+              class="card-text"
+            >
+              <small>
+                7 recipes
+              </small>
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

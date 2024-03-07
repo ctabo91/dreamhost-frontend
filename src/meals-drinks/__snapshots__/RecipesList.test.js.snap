@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RecipesList Component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="RecipesList col-md-8 offset-md-2 mt-5 pt-5"
+  >
+    <h4
+      class="RecipesList-title display-4 text-center"
+    >
+      - MEALS -
+    </h4>
+    <div
+      class="SearchForm mb-3"
+    >
+      <form>
+        <div
+          class="input-group"
+        >
+          <input
+            class="form-control form-control-lg flex-grow-1"
+            name="searchTerm"
+            placeholder="Enter search term..."
+            value=""
+          />
+          <button
+            class="btn btn-lg"
+            type="submit"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    <div
+      class="text-center"
+    >
+      <a
+        href="/recipes/meals/categories"
+      >
+        <button
+          class="filter-button filter-button-category btn btn-sm btn-secondary mr-2"
+        >
+          Filter by Category
+        </button>
+      </a>
+      <button
+        class="filter-button filter-button-favorite btn btn-sm btn-secondary"
+      >
+        Show Favorites
+      </button>
+    </div>
+    <div
+      class="RecipesList-list mt-4"
+    >
+      <a
+        class="RecipeCard card mb-3"
+        href="/recipes/details/global/meals/1"
+      >
+        <div
+          class="row no-gutters align-items-center"
+        >
+          <div
+            class="col-md-4"
+          >
+            <img
+              alt="Recipe 1"
+              class="card-img img-fluid"
+              src="Thumbnail 1"
+            />
+          </div>
+          <div
+            class="col-md-8"
+          >
+            <div
+              class="card-body pt-0 pb-0"
+            >
+              <h3
+                class="RecipeCard-title card-title text-center pb-0"
+              >
+                RECIPE 1
+              </h3>
+              <hr
+                class="top-line mt-0"
+              />
+              <h4
+                class="RecipeCard-subheading card-text text-center"
+              >
+                <i>
+                  AREA 1
+                </i>
+              </h4>
+              <hr
+                class="mt-0"
+              />
+              <h5
+                class="RecipeCard-ingredients text-center"
+              >
+                Ingredients
+              </h5>
+              <div
+                class="RecipeCard-list text-center "
+              >
+                <div
+                  class="RecipeCard-ingredient"
+                >
+                  Ingredient 1
+                </div>
+                <div
+                  class="RecipeCard-ingredient"
+                >
+                  Ingredient 2
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;

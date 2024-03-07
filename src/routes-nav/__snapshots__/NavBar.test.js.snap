@@ -9,95 +9,161 @@ exports[`matches snapshot 1`] = `
       class="NavBar navbar navbar-expand-lg d-flex justify-content-between"
     >
       <a
-        class="navbar-brand"
+        class="navbar-brand ml-2 pb-0 pt-0"
         href="/"
       >
         DreamHost
       </a>
-      <ul
-        class="navbar-nav ml-auto"
+      <div
+        class="collapse navbar-collapse"
       >
-        <li
-          class="nav-item mr-4"
+        <ul
+          class="navbar-nav ml-auto"
         >
-          <a
-            class="nav-link"
-            href="/recipes/meals"
+          <li
+            class="nav-item dropdown mr-4"
           >
-            Meals
-          </a>
-        </li>
-        <li
-          class="nav-item mr-4"
-        >
-          <a
-            class="nav-link"
-            href="/recipes/drinks"
+            <a
+              aria-current="page"
+              aria-expanded="false"
+              aria-haspopup="true"
+              class="nav-link dropdown-toggle active"
+              data-toggle="dropdown"
+              href="/"
+              id="recipesDropdown"
+              role="button"
+            >
+              Recipes
+            </a>
+            <div
+              aria-labelledby="recipesDropdown"
+              class="dropdown-menu"
+            >
+              <div
+                class="dropdown-item-container"
+              >
+                <a
+                  class="nav-link pr-0"
+                  href="/recipes/meals"
+                >
+                  Meals
+                </a>
+              </div>
+              <div
+                class="dropdown-item-container"
+              >
+                <a
+                  class="nav-link pr-0"
+                  href="/recipes/drinks"
+                >
+                  Drinks
+                </a>
+              </div>
+              <div
+                class="dropdown-item-container"
+              >
+                <a
+                  class="nav-link pr-0"
+                  href="/recipes/meals/categories"
+                >
+                  Meal Categories
+                </a>
+              </div>
+              <div
+                class="dropdown-item-container"
+              >
+                <a
+                  class="nav-link pr-0"
+                  href="/recipes/drinks/categories"
+                >
+                  Drink Categories
+                </a>
+              </div>
+            </div>
+          </li>
+          <li
+            class="nav-item dropdown mr-4"
           >
-            Drinks
-          </a>
-        </li>
-        <li
-          class="nav-item mr-4"
-        >
-          <a
-            class="nav-link"
-            href="/profile"
+            <a
+              aria-current="page"
+              aria-expanded="false"
+              aria-haspopup="true"
+              class="nav-link dropdown-toggle active"
+              data-toggle="dropdown"
+              href="/"
+              id="personalDropdown"
+              role="button"
+            >
+              Personal
+            </a>
+            <div
+              aria-labelledby="personalDropdown"
+              class="dropdown-menu"
+            >
+              <div
+                class="dropdown-item-container"
+              >
+                <a
+                  class="nav-link pr-0"
+                  href="/recipes/create/meals"
+                >
+                  Create Meal
+                </a>
+              </div>
+              <div
+                class="dropdown-item-container"
+              >
+                <a
+                  class="nav-link pr-0"
+                  href="/recipes/create/drinks"
+                >
+                  Create Drink
+                </a>
+              </div>
+              <div
+                class="dropdown-item-container"
+              >
+                <a
+                  class="nav-link pr-0"
+                  href="/recipes/meals/personal"
+                >
+                  Personal Meals
+                </a>
+              </div>
+              <div
+                class="dropdown-item-container"
+              >
+                <a
+                  class="nav-link pr-0"
+                  href="/recipes/drinks/personal"
+                >
+                  Personal Drinks
+                </a>
+              </div>
+            </div>
+          </li>
+          <li
+            class="nav-item mr-4"
           >
-            Profile
-          </a>
-        </li>
-        <li
-          class="nav-item mr-4"
-        >
-          <a
-            class="nav-link"
-            href="/recipes/create/meals"
+            <a
+              class="nav-link"
+              href="/profile"
+            >
+              Profile
+            </a>
+          </li>
+          <li
+            class="nav-item"
           >
-            Create Meal
-          </a>
-        </li>
-        <li
-          class="nav-item mr-4"
-        >
-          <a
-            class="nav-link"
-            href="/recipes/create/drinks"
-          >
-            Create Drink
-          </a>
-        </li>
-        <li
-          class="nav-item mr-4"
-        >
-          <a
-            class="nav-link"
-            href="/recipes/meals/personal"
-          >
-            Personal Meals
-          </a>
-        </li>
-        <li
-          class="nav-item mr-4"
-        >
-          <a
-            class="nav-link"
-            href="/recipes/drinks/personal"
-          >
-            Personal Drinks
-          </a>
-        </li>
-        <li
-          class="nav-item"
-        >
-          <a
-            class="nav-link"
-            href="/"
-          >
-            Logout
-          </a>
-        </li>
-      </ul>
+            <a
+              class="nav-link"
+              href="/"
+            >
+              Logout
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </div>
 </DocumentFragment>
@@ -112,35 +178,39 @@ exports[`matches snapshot when logged out 1`] = `
       class="NavBar navbar navbar-expand-lg d-flex justify-content-between"
     >
       <a
-        class="navbar-brand"
+        class="navbar-brand ml-2 pb-0 pt-0"
         href="/"
       >
         DreamHost
       </a>
-      <ul
-        class="navbar-nav ml-auto"
+      <div
+        class="collapse navbar-collapse"
       >
-        <li
-          class="nav-item mr-4"
+        <ul
+          class="navbar-nav ml-auto"
         >
-          <a
-            class="nav-link"
-            href="/login"
+          <li
+            class="nav-item mr-4"
           >
-            Login
-          </a>
-        </li>
-        <li
-          class="nav-item mr-4"
-        >
-          <a
-            class="nav-link"
-            href="/signup"
+            <a
+              class="nav-link"
+              href="/login"
+            >
+              Login
+            </a>
+          </li>
+          <li
+            class="nav-item mr-4"
           >
-            Sign Up
-          </a>
-        </li>
-      </ul>
+            <a
+              class="nav-link"
+              href="/signup"
+            >
+              Sign Up
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </div>
 </DocumentFragment>

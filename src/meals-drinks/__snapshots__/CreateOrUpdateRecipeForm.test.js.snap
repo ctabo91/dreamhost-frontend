@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreateOrUpdateRecipeForm Component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="CreateOrUpdateRecipeForm"
+  >
+    <div
+      class="CreateOrUpdateRecipeForm-container form-container container col-md-6 offset-md-3 col-lg-6 offset-lg-3 mt-5 pt-5"
+    >
+      <h4
+        class="form-title display-4 text-center mb-3"
+      >
+        - Create Meal -
+      </h4>
+      <div
+        class="CreateOrUpdateRecipeForm-card form-card card"
+      >
+        <div
+          class="card-body"
+        >
+          <form>
+            <div
+              class="form-group"
+            >
+              <label
+                class="CreateOrUpdateRecipeForm-label"
+                for="name"
+              >
+                Name
+              </label>
+              <input
+                class="form-control"
+                id="name"
+                name="name"
+                placeholder="Recipe Name"
+                value=""
+              />
+            </div>
+            <div
+              class="form-group mt-3"
+            >
+              <label
+                class="CreateOrUpdateRecipeForm-label"
+                for="category"
+              >
+                Category
+              </label>
+              <input
+                class="form-control"
+                id="category"
+                name="category"
+                placeholder="ex: Chicken"
+                value=""
+              />
+            </div>
+            <div
+              class="form-group mt-3"
+            >
+              <label
+                class="CreateOrUpdateRecipeForm-label"
+                for="area"
+              >
+                Area
+              </label>
+              <input
+                class="form-control"
+                id="area"
+                name="area"
+                placeholder="ex: Colombian"
+                value=""
+              />
+            </div>
+            <div
+              class="form-group mt-3"
+            >
+              <label
+                class="CreateOrUpdateRecipeForm-label"
+                for="instructions"
+              >
+                Instructions
+              </label>
+              <textarea
+                class="form-control"
+                id="instructions"
+                name="instructions"
+                placeholder="Details on how to make your recipe..."
+              />
+            </div>
+            <div
+              class="form-group mt-3"
+            >
+              <label
+                class="CreateOrUpdateRecipeForm-label"
+                for="thumbnail"
+              >
+                Thumbnail
+              </label>
+              <input
+                class="form-control"
+                id="thumbnail"
+                name="thumbnail"
+                placeholder="Optional photo url"
+                value=""
+              />
+            </div>
+            <div
+              class="form-group mt-3"
+            >
+              <label
+                class="CreateOrUpdateRecipeForm-label"
+              >
+                Ingredients
+              </label>
+              <ul />
+              <label
+                class="CreateOrUpdateRecipeForm-label"
+              >
+                New Ingredient 
+                <p
+                  class="mb-1"
+                >
+                  <small>
+                    (Add an ingredient and click button below to display it)
+                  </small>
+                </p>
+              </label>
+              <div
+                class="input-group"
+              >
+                <input
+                  class="form-control flex-grow-1"
+                  placeholder="ex: 1 tsp Salt"
+                  value=""
+                />
+                <button
+                  class="submit-button btn btn-secondary"
+                  type="submit"
+                >
+                  Add Ingredient
+                </button>
+              </div>
+            </div>
+          </form>
+          <button
+            class="submit-button btn btn-primary btn-block float-right mt-3"
+            type="submit"
+          >
+            Create
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
