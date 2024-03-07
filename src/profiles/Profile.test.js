@@ -60,16 +60,10 @@ describe('Profile Component', () => {
       userEvent.type(screen.getByLabelText('Email'), 'new.email@example.com');
       userEvent.type(screen.getByLabelText('Password'), 'newPassword');
     });
-    // userEvent.type(screen.getByLabelText('First Name'), 'NewFirstName');
+
     expect(screen.getByLabelText('First Name')).toHaveValue('JohnNewFirstName');
-
-    // userEvent.type(screen.getByLabelText('Last Name'), 'NewLastName');
     expect(screen.getByLabelText('Last Name')).toHaveValue('DoeNewLastName');
-
-    // userEvent.type(screen.getByLabelText('Email'), 'new.email@example.com');
     expect(screen.getByLabelText('Email')).toHaveValue('john.doe@example.comnew.email@example.com');
-
-    // userEvent.type(screen.getByLabelText('Password'), 'newPassword');
     expect(screen.getByLabelText('Password')).toHaveValue('newPassword');
   });
 

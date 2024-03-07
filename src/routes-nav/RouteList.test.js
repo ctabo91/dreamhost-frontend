@@ -4,7 +4,7 @@ import RouteList from "./RouteList";
 import { MemoryRouter } from "react-router";
 import { UserProvider } from "../testUtils";
 
-it("renders without crashing", function () {
+it("renders without crashing", () => {
     render(
         <MemoryRouter>
             <UserProvider>
@@ -14,7 +14,7 @@ it("renders without crashing", function () {
     );
 });
 
-it("matches snapshot", function () {
+it("matches snapshot", () => {
     const { asFragment } = render(
         <MemoryRouter>
             <UserProvider>

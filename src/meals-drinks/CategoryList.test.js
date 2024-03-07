@@ -85,7 +85,6 @@ describe('CategoryList Component', () => {
     // Wait for the API call to resolve
     await screen.findByText('- Select A Drink Category -');
 
-    // Add your assertions for the drink categories
     expect(screen.getByText('CATEGORY 1')).toBeInTheDocument();
     expect(screen.getByText('CATEGORY 2')).toBeInTheDocument();
     expect(screen.getByText('CATEGORY 3')).toBeInTheDocument();
@@ -107,7 +106,6 @@ describe('CategoryList Component', () => {
     // Wait for the API call to resolve
     await screen.findByText('Sorry, no results were found!');
 
-    // Add your assertions for the no results message
     expect(screen.getByText('Sorry, no results were found!')).toBeInTheDocument();
   });
 });

@@ -4,7 +4,7 @@ import { MemoryRouter } from "react-router";
 import NavBar from "./NavBar";
 import { UserProvider } from "../testUtils";
 
-it("renders without crashing", function () {
+it("renders without crashing", () => {
     render(
         <MemoryRouter>
             <UserProvider>
@@ -14,7 +14,7 @@ it("renders without crashing", function () {
     );
 });
 
-it("matches snapshot", function () {
+it("matches snapshot", () => {
     const { asFragment } = render(
         <MemoryRouter>
             <UserProvider>
@@ -25,7 +25,7 @@ it("matches snapshot", function () {
     expect(asFragment()).toMatchSnapshot();
 });
 
-it("matches snapshot when logged out", function () {
+it("matches snapshot when logged out", () => {
     const { asFragment } = render(
         <MemoryRouter>
             <UserProvider currentUser={null}>

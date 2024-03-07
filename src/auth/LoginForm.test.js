@@ -3,7 +3,7 @@ import { render } from "@testing-library/react";
 import LoginForm from "./LoginForm";
 import { MemoryRouter } from "react-router";
 
-it("renders without crashing", function() {
+it("renders without crashing", () => {
     render(
         <MemoryRouter>
             <LoginForm />
@@ -11,7 +11,7 @@ it("renders without crashing", function() {
     );
 });
 
-it("matches snapshot", function () {
+it("matches snapshot", () => {
     const { asFragment } = render(
         <MemoryRouter>
             <LoginForm />
