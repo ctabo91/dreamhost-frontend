@@ -44,3 +44,21 @@
 .dropdown-item-container .nav-link {
     width: 100%;
 }
+
+@media (max-width: 768px) {
+    .NavBar {
+        padding: 5px;
+    }
+    
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    
+    .nav-link {
+        font-size: 1rem;
+    }
+
+    .dropdown-menu .nav-link {
+        background-color: rgb(14, 13, 13);
+    }
+}
