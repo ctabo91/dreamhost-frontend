@@ -17,9 +17,6 @@
 }
 
 .RecipeDetails-title {
-    /* font-family: "Great Vibes", cursive;
-    font-weight: 400;
-    font-style: normal; */
     font-family: "Alumni Sans Pinstripe", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -31,9 +28,6 @@
     font-weight: 400;
     font-style: normal;
     font-size: 2.5rem;
-    /* font-family: "Playball", cursive;
-    font-weight: 400;
-    font-style: normal; */
 }
 
 .heading-title {
@@ -60,7 +54,7 @@
 }
 
 .RecipeDetails-instructions::-webkit-scrollbar-thumb {
-    background-color: gray;
+    background-color: rgb(128, 128, 128);
     border-radius: 10px;
 }
 
@@ -71,11 +65,13 @@
     font-size: 2.5rem;
     background-color: transparent;
     border: none;
-    color: #fff;
+    color: rgb(255, 255, 255);
+    margin-top: 24px;
+    padding-right: 0;
 }
 
 .btn-favorite.favorited {
-    color: #dc3545;
+    color: rgb(220, 53, 69);
 }
 
 .btn-edit {
@@ -84,6 +80,82 @@
 }
 
 .split-line {
-    border-right: 1px solid #ccc;
+    border-right: 1px solid rgb(204, 204, 204);
     margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .RecipeDetails-title {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .RecipeDetails-container {
+        padding-top: 60px;
+    }
+    
+    .RecipeDetails-content {
+        color: rgb(255, 255, 255);
+    }
+    
+    .RecipeDetails-title {
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+    
+    .RecipeDetails-category {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    
+    .heading-title {
+        font-size: 1.25rem;
+    }
+    
+    .RecipeDetails-type {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .RecipeDetails-glass {
+        font-size: 0.7rem;
+    }
+
+    .instructions-title,
+    .ingredients-title {
+        text-align: center;
+    }
+    
+    .RecipeDetails-instructions,
+    .RecipeDetails-ingredients {
+        max-height: 200px;
+        overflow-y: auto;
+    }
+
+    .RecipeDetails-ingredients::-webkit-scrollbar {
+        width: 2px;
+    }
+    
+    .RecipeDetails-ingredients::-webkit-scrollbar-thumb {
+        background-color: rgb(128, 128, 128);
+        border-radius: 10px;
+    }
+    
+    .RecipeDetails-list-item {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+    
+    .btn-favorite {
+        font-size: 1.5rem;
+        padding: 0 15px;
+        margin-top: 0;
+    }
+    
+    .btn-edit {
+        width: 100%;
+        font-size: 1rem;
+        margin-top: 20px;
+    }
 }

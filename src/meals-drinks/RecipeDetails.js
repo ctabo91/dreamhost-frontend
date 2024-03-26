@@ -49,13 +49,10 @@ function RecipeDetails() {
 
     const organizedInstructions = recipe ? organizeInstructions(recipe.instructions) : [];
 
-
     if (!recipe) return <LoadingSpinner />;
 
-    
-
     return (
-        <div className="RecipeDetails-container" 
+        <div className="RecipeDetails-container"
              style={{
                 backgroundImage: `url(${recipe.thumbnail})`,
                 backgroundSize: 'cover',
@@ -69,63 +66,59 @@ function RecipeDetails() {
         >
             <div className="RecipeDetails-overlay"></div>
             <div className="RecipeDetails-content container">
-                <div className="row">  
-                    <h2 className="RecipeDetails-title col text-center mt-4 ">{recipe.name.toUpperCase()}</h2>
-                </div>
                 <div className="row">
-                    <h3 className="RecipeDetails-category col text-center">
-                        {item === "meals"
+                    <div className="col">
+                        <h2 className="RecipeDetails-title text-center mt-4">{recipe.name.toUpperCase()}</h2>
+                        <h3 className="RecipeDetails-category text-center">
+                            {item === "meals"
                                 ? `${recipe.area} ${recipe.category} Dish`
                                 : recipe.category}
-                    </h3>
-                </div>
-                <div>
-                    {item === "drinks"
-                            ? <>
-                                <div className="row mt-2">
-                                    <h4 className="RecipeDetails-type heading-title col text-center">{recipe.type}</h4>
-                                </div>
-                                <div className="row">
-                                    <h6 className="RecipeDetails-glass heading-title col text-center">*Serve in a {recipe.glass}*</h6>
-                                </div>
+                        </h3>
+                        {item === "drinks" && (
+                            <>
+                                <h4 className="RecipeDetails-type heading-title text-center mt-3">{recipe.type}</h4>
+                                <h6 className="RecipeDetails-glass heading-title text-center">*Serve in a {recipe.glass}*</h6>
                             </>
-                            : null
-                    }
-                    <div className="row mt-4 d-flex justify-content-around">
-                        <div className="col-6">
-                            <h4 className="heading-title">Instructions</h4>
-                            <ol className="RecipeDetails-instructions">
-                                {organizedInstructions.map( (instruction, idx) => (
-                                    <li key={idx} className="RecipeDetails-list-item">{instruction}</li>
-                                ))}
-                            </ol>
-                        </div>
-                        <div className="col-1 split-line"></div>
-                        <div className="col-4">
-                            <h4 className="heading-title">Ingredients</h4>
-                            <ul className="RecipeDetails-ingredients">
-                                {recipe.ingredients.map((ingredient, idx) => (
-                                    <li key={idx} className="RecipeDetails-list-item">{ingredient}</li>
-                                ))}
-                            </ul>
-                        </div>
+                        )}
                     </div>
-                    {access === "global"
-                        ? <button
-                            className={`btn btn-favorite font-weight-bold mt-4 ${hasFavoritedRecipe(id, item) ? "favorited" : ""}`}
-                            onClick={() => favoriteRecipe(id, item)}
-                          >
-                            <FontAwesomeIcon icon={hasFavoritedRecipe(id, item) ? solidHeart : regularHeart} />
-                          </button>
-                        : <div className="container d-flex justify-content-end">
-                            <Link to={`/recipes/update/${item}/${id}`}>
-                              <button className="btn btn-edit btn-danger active mt-4 mb-4">Edit Recipe</button>
-                            </Link>
-                          </div>}
                 </div>
+                <div className="row mt-4 d-flex justify-content-around">
+                    <div className="col-12 col-sm-6">
+                        <h4 className="instructions-title heading-title">Instructions</h4>
+                        <ol className="RecipeDetails-instructions">
+                            {organizedInstructions.map((instruction, idx) => (
+                                <li key={idx} className="RecipeDetails-list-item">{instruction}</li>
+                            ))}
+                        </ol>
+                    </div>
+                    <div className="col-12 col-sm-1 split-line"></div>
+                    <div className="col-12 col-sm-4">
+                        <h4 className="ingredients-title heading-title">Ingredients</h4>
+                        <ul className="RecipeDetails-ingredients">
+                            {recipe.ingredients.map((ingredient, idx) => (
+                                <li key={idx} className="RecipeDetails-list-item">{ingredient}</li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+                {access === "global" ? (
+                    <button
+                        className={`btn btn-favorite font-weight-bold  ${hasFavoritedRecipe(id, item) ? "favorited" : ""}`}
+                        onClick={() => favoriteRecipe(id, item)}
+                    >
+                        <FontAwesomeIcon icon={hasFavoritedRecipe(id, item) ? solidHeart : regularHeart} />
+                    </button>
+                ) : (
+                    <div className="container d-flex justify-content-end">
+                        <Link to={`/recipes/update/${item}/${id}`}>
+                            <button className="btn btn-edit btn-danger active mt-4 mb-4">Edit Recipe</button>
+                        </Link>
+                    </div>
+                )}
             </div>
         </div>
     );
 }
+
 
 export default RecipeDetails;
