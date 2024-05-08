@@ -2,216 +2,254 @@
 
 exports[`matches snapshot 1`] = `
 <DocumentFragment>
-  <div
-    class="container"
+  <nav
+    class="NavBar navbar navbar-expand-lg d-flex justify-content-between"
   >
-    <nav
-      class="NavBar navbar navbar-expand-lg d-flex justify-content-between"
+    <a
+      class="navbar-brand ml-2 pb-0 pt-0"
+      href="/"
     >
-      <a
-        class="navbar-brand ml-2 pb-0 pt-0"
-        href="/"
+      DreamHost
+    </a>
+    <button
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      class="navbar-toggler"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="svg-inline--fa fa-bars navbar-toggler-icon"
+        data-icon="bars"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style="color: rgb(110, 66, 66);"
+        viewBox="0 0 448 512"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        DreamHost
-      </a>
-      <div
-        class="collapse navbar-collapse"
+        <path
+          d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+          fill="currentColor"
+        />
+      </svg>
+    </button>
+    <div
+      class="collapse navbar-collapse "
+    >
+      <ul
+        class="navbar-nav ml-auto"
       >
-        <ul
-          class="navbar-nav ml-auto"
+        <li
+          class="nav-item dropdown mr-4"
         >
-          <li
-            class="nav-item dropdown mr-4"
+          <a
+            aria-current="page"
+            aria-expanded="false"
+            aria-haspopup="true"
+            class="nav-link dropdown-toggle active"
+            data-toggle="dropdown"
+            href="/"
+            id="recipesDropdown"
+            role="button"
           >
-            <a
-              aria-current="page"
-              aria-expanded="false"
-              aria-haspopup="true"
-              class="nav-link dropdown-toggle active"
-              data-toggle="dropdown"
-              href="/"
-              id="recipesDropdown"
-              role="button"
-            >
-              Recipes
-            </a>
+            Recipes
+          </a>
+          <div
+            aria-labelledby="recipesDropdown"
+            class="dropdown-menu"
+          >
             <div
-              aria-labelledby="recipesDropdown"
-              class="dropdown-menu"
+              class="dropdown-item-container"
             >
-              <div
-                class="dropdown-item-container"
+              <a
+                class="nav-link pr-0"
+                href="/recipes/meals"
               >
-                <a
-                  class="nav-link pr-0"
-                  href="/recipes/meals"
-                >
-                  Meals
-                </a>
-              </div>
-              <div
-                class="dropdown-item-container"
-              >
-                <a
-                  class="nav-link pr-0"
-                  href="/recipes/drinks"
-                >
-                  Drinks
-                </a>
-              </div>
-              <div
-                class="dropdown-item-container"
-              >
-                <a
-                  class="nav-link pr-0"
-                  href="/recipes/meals/categories"
-                >
-                  Meal Categories
-                </a>
-              </div>
-              <div
-                class="dropdown-item-container"
-              >
-                <a
-                  class="nav-link pr-0"
-                  href="/recipes/drinks/categories"
-                >
-                  Drink Categories
-                </a>
-              </div>
+                Meals
+              </a>
             </div>
-          </li>
-          <li
-            class="nav-item dropdown mr-4"
-          >
-            <a
-              aria-current="page"
-              aria-expanded="false"
-              aria-haspopup="true"
-              class="nav-link dropdown-toggle active"
-              data-toggle="dropdown"
-              href="/"
-              id="personalDropdown"
-              role="button"
-            >
-              Personal
-            </a>
             <div
-              aria-labelledby="personalDropdown"
-              class="dropdown-menu"
+              class="dropdown-item-container"
             >
-              <div
-                class="dropdown-item-container"
+              <a
+                class="nav-link pr-0"
+                href="/recipes/drinks"
               >
-                <a
-                  class="nav-link pr-0"
-                  href="/recipes/create/meals"
-                >
-                  Create Meal
-                </a>
-              </div>
-              <div
-                class="dropdown-item-container"
-              >
-                <a
-                  class="nav-link pr-0"
-                  href="/recipes/create/drinks"
-                >
-                  Create Drink
-                </a>
-              </div>
-              <div
-                class="dropdown-item-container"
-              >
-                <a
-                  class="nav-link pr-0"
-                  href="/recipes/meals/personal"
-                >
-                  Personal Meals
-                </a>
-              </div>
-              <div
-                class="dropdown-item-container"
-              >
-                <a
-                  class="nav-link pr-0"
-                  href="/recipes/drinks/personal"
-                >
-                  Personal Drinks
-                </a>
-              </div>
+                Drinks
+              </a>
             </div>
-          </li>
-          <li
-            class="nav-item mr-4"
-          >
-            <a
-              class="nav-link"
-              href="/profile"
+            <div
+              class="dropdown-item-container"
             >
-              Profile
-            </a>
-          </li>
-          <li
-            class="nav-item"
-          >
-            <a
-              class="nav-link"
-              href="/"
+              <a
+                class="nav-link pr-0"
+                href="/recipes/meals/categories"
+              >
+                Meal Categories
+              </a>
+            </div>
+            <div
+              class="dropdown-item-container"
             >
-              Logout
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+              <a
+                class="nav-link pr-0"
+                href="/recipes/drinks/categories"
+              >
+                Drink Categories
+              </a>
+            </div>
+          </div>
+        </li>
+        <li
+          class="nav-item dropdown mr-4"
+        >
+          <a
+            aria-current="page"
+            aria-expanded="false"
+            aria-haspopup="true"
+            class="nav-link dropdown-toggle active"
+            data-toggle="dropdown"
+            href="/"
+            id="personalDropdown"
+            role="button"
+          >
+            Personal
+          </a>
+          <div
+            aria-labelledby="personalDropdown"
+            class="dropdown-menu"
+          >
+            <div
+              class="dropdown-item-container"
+            >
+              <a
+                class="nav-link pr-0"
+                href="/recipes/create/meals"
+              >
+                Create Meal
+              </a>
+            </div>
+            <div
+              class="dropdown-item-container"
+            >
+              <a
+                class="nav-link pr-0"
+                href="/recipes/create/drinks"
+              >
+                Create Drink
+              </a>
+            </div>
+            <div
+              class="dropdown-item-container"
+            >
+              <a
+                class="nav-link pr-0"
+                href="/recipes/meals/personal"
+              >
+                Personal Meals
+              </a>
+            </div>
+            <div
+              class="dropdown-item-container"
+            >
+              <a
+                class="nav-link pr-0"
+                href="/recipes/drinks/personal"
+              >
+                Personal Drinks
+              </a>
+            </div>
+          </div>
+        </li>
+        <li
+          class="nav-item mr-4"
+        >
+          <a
+            class="nav-link"
+            href="/profile"
+          >
+            Profile
+          </a>
+        </li>
+        <li
+          class="nav-item"
+        >
+          <a
+            class="nav-link"
+            href="/"
+          >
+            Logout
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </DocumentFragment>
 `;
 
 exports[`matches snapshot when logged out 1`] = `
 <DocumentFragment>
-  <div
-    class="container"
+  <nav
+    class="NavBar navbar navbar-expand-lg d-flex justify-content-between"
   >
-    <nav
-      class="NavBar navbar navbar-expand-lg d-flex justify-content-between"
+    <a
+      class="navbar-brand ml-2 pb-0 pt-0"
+      href="/"
     >
-      <a
-        class="navbar-brand ml-2 pb-0 pt-0"
-        href="/"
+      DreamHost
+    </a>
+    <button
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      class="navbar-toggler"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="svg-inline--fa fa-bars navbar-toggler-icon"
+        data-icon="bars"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style="color: rgb(110, 66, 66);"
+        viewBox="0 0 448 512"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        DreamHost
-      </a>
-      <div
-        class="collapse navbar-collapse"
+        <path
+          d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+          fill="currentColor"
+        />
+      </svg>
+    </button>
+    <div
+      class="collapse navbar-collapse "
+    >
+      <ul
+        class="navbar-nav ml-auto"
       >
-        <ul
-          class="navbar-nav ml-auto"
+        <li
+          class="nav-item mr-4"
         >
-          <li
-            class="nav-item mr-4"
+          <a
+            class="nav-link"
+            href="/login"
           >
-            <a
-              class="nav-link"
-              href="/login"
-            >
-              Login
-            </a>
-          </li>
-          <li
-            class="nav-item mr-4"
+            Login
+          </a>
+        </li>
+        <li
+          class="nav-item mr-4"
+        >
+          <a
+            class="nav-link"
+            href="/signup"
           >
-            <a
-              class="nav-link"
-              href="/signup"
-            >
-              Sign Up
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+            Sign Up
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </DocumentFragment>
 `;
